@@ -3,6 +3,7 @@ module.exports = {
     description: "笔记整理、资料记录",
     port: 7000,
     lastUpdated: "最后更新：",
+    base: '/blog',
     themeConfig: {
         nav: [
             {text: "首页", link: "/"},
@@ -13,8 +14,8 @@ module.exports = {
         sidebar: {
             "/note/": [
                 {
-                    title:"经验分享",
-                    path:"/note/"
+                    title: "经验分享",
+                    path: "/note/"
                 },
                 {
                     title: "Javascript",
