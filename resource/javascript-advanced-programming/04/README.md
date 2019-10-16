@@ -262,12 +262,12 @@ JavaScript具有自动垃圾收集机制，垃圾收集器会每隔一段时间�
 ```javascript
 console.log(process.memoryUsage());
 // 输出
-{
-  rss: 27709440,      // resident set size，所有内存占用，包括指令区和堆栈
-  heapTotal: 5685248, // "堆"占用的内存，包括用到的和没用到的
-  heapUsed: 3449392,  // 用到的堆的部分
-  external: 8772      // V8 引擎内部的 C++ 对象占用的内存
-}
+//{
+//  rss: 27709440,      // resident set size，所有内存占用，包括指令区和堆栈
+//  heapTotal: 5685248, // "堆"占用的内存，包括用到的和没用到的
+//  heapUsed: 3449392,  // 用到的堆的部分
+//  external: 8772      // V8 引擎内部的 C++ 对象占用的内存
+//}
 ```
 
 判断内存泄漏，以heapUsed字段为准。
