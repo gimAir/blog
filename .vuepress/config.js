@@ -8,21 +8,34 @@ module.exports = {
     lastUpdated: "最后更新：",
     base: '/blog/',
     themeConfig: {
+        displayAllHeaders: true, // 默认值：false
+        sidebarDepth: 3,
         nav: [
             {text: "首页", link: "/"},
             {
                 text: "笔记",
                 items: [
-                    {text: 'Javascript', link: '/note/javascript/'},
-                    {text: 'Vue.js', link: '/note/vue/'},
-                    {text: 'Java', link: '/note/java/'},
-                    {text: '工程化开发管理系统', link: '/note/develop-manager-system/'}
-                ]
-            },
-            {
-                text: "资料",
-                items: [
-                    {text: 'Javascript高级程序设计', link: '/resource/javascript-advanced-programming/'}
+                    {
+                        text: '手记',
+                        items: [
+                            {text: '浏览器', link: '/note/browser/'},
+                            {text: 'Javascript', link: '/note/javascript/'},
+                            {text: 'Vue.js', link: '/note/vue/'},
+                            {text: 'Java', link: '/note/java/'},
+                        ]
+                    },
+                    {
+                        text: '文章',
+                        items: [
+                            {text: '工程化开发管理系统', link: '/article/develop-manager-system/'}
+                        ]
+                    },
+                    {
+                        text: "资料",
+                        items: [
+                            {text: 'Javascript高级程序设计', link: '/resource/javascript-advanced-programming/'}
+                        ]
+                    },
                 ]
             },
             {text: "Github", link: "https://github.com/gimAir/javascript"},
@@ -34,22 +47,18 @@ module.exports = {
                     path: "/note/vue/lifecycle/",
                 }
             ],
-            "/note/develop-manager-system/": [
+            "/article/develop-manager-system/": [
                 {
-                    title: '前言简介',
-                    path: '/note/develop-manager-system/introduce/',
-                },
-                {
-                    title: '项目设计',
-                    path: '/note/develop-manager-system/design/'
+                    title: '准备工作',
+                    path: '/article/develop-manager-system/prepare/'
                 },
                 {
                     title: '目录结构',
-                    path: '/note/develop-manager-system/directory/'
+                    path: '/article/develop-manager-system/directory/'
                 },
                 {
-                    title: '动态路由',
-                    path: '/note/develop-manager-system/router/'
+                    title: 'vue-router 动态路由',
+                    path: '/article/develop-manager-system/router/'
                 }
             ],
             "/resource/javascript-advanced-programming/": [
