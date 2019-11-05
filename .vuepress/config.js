@@ -21,6 +21,7 @@ module.exports = {
                             {text: '浏览器', link: '/note/browser/'},
                             {text: 'Javascript', link: '/note/javascript/'},
                             {text: 'Vue.js', link: '/note/vue/'},
+                            {text: 'Webpack', link: '/note/webpack/'},
                             {text: 'Java', link: '/note/java/'},
                         ]
                     },
@@ -45,6 +46,12 @@ module.exports = {
                 {
                     title: "生命周期",
                     path: "/note/vue/lifecycle/",
+                }
+            ],
+            "/note/webpack/": [
+                {
+                    title: "htmlWebpackPlugin",
+                    path: "/note/webpack/htmlWebpackPlugin/",
                 }
             ],
             "/article/develop-manager-system/": [
